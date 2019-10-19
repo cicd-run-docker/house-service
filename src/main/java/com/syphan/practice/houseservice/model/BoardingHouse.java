@@ -31,4 +31,16 @@ public class BoardingHouse extends BaseEntity {
     @NotBlank
     @Column(name = "phone_number")
     private String userPhone;
+
+    @NotBlank
+    @Column(name = "house_name")
+    private String houseName;
+
+    @NotBlank
+    @Column(name = "address")
+    private String address;
+
+    @NotBlank
+    @Column(name = "room_number")
+    private int roomNum;
 }

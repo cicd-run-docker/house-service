@@ -9,6 +9,9 @@ CREATE TABLE `boarding_house`
     `user_id`      int(11)     NOT NULL,
     `user_name`    varchar(64) NOT NULL,
     `phone_number` varchar(64) NOT NULL,
+    `house_name`   varchar(64) NOT NULL,
+    `address`      varchar(64) NOT NULL,
+    `room_number`  int(11)     NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8;
