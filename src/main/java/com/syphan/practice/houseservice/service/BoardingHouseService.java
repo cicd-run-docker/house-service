@@ -7,5 +7,5 @@ import com.syphan.practice.houseservice.model.BoardingHouse;
 
 public interface BoardingHouseService extends BaseService<BoardingHouse, Integer> {
 
-    BoardingHouse create(BoardingHouseCreateDto data) throws BIZException;
+    BoardingHouse create(int userId, BoardingHouseCreateDto data) throws BIZException;
 }

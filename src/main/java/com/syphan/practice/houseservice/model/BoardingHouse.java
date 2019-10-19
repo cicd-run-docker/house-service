@@ -40,7 +40,7 @@ public class BoardingHouse extends BaseEntity {
     @Column(name = "address")
     private String address;
 
-    @NotBlank
+    @NotNull
     @Column(name = "room_number")
     private int roomNum;
 }

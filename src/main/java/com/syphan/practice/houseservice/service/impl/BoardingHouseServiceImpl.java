@@ -29,12 +29,12 @@ public class BoardingHouseServiceImpl extends BaseServiceImpl<BoardingHouse, Int
     private UserService userService;
 
     @Override
-    public BoardingHouse create(BoardingHouseCreateDto data) throws BIZException {
-        User user = userService.getById(data.getUserId());
+    public BoardingHouse create(int userId, BoardingHouseCreateDto data) throws BIZException {
+        User user = userService.getById(userId);
         if (user == null) throw BIZException.buildBIZException(ErrType.NOT_FOUND,
-                "user.not.found", String.format("%s%s%s", "User with id [ ", data.getUserId(), " ] not fount"));
+                "user.not.found", String.format("%s%s%s", "User with id [ ", userId, " ] not fount"));
         BoardingHouse house = new BoardingHouse();
-        house.setUserId(data.getUserId());
+        house.setUserId(userId);
         house.setUsername(user.getFullName() != null ? user.getFullName() : user.getUsername());
         house.setUserPhone(user.getPhoneNum());
         house.setHouseName(data.getName());

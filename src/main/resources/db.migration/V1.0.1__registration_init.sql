@@ -4,6 +4,7 @@ SET FOREIGN_KEY_CHECKS = 0;
 CREATE TABLE `boarding_house`
 (
     `id`           int(11)     NOT NULL AUTO_INCREMENT,
+    `version`      int(11)     NOT NULL,
     `create_at`    datetime    NOT NULL,
     `update_at`    datetime    NOT NULL,
     `user_id`      int(11)     NOT NULL,
