@@ -1,4 +1,4 @@
-package com.syphan.practice.houseservice.model;
+package com.syphan.practice.house.service.api.model;
 
 import com.syphan.practice.commonservice.model.BaseEntity;
 import lombok.AllArgsConstructor;

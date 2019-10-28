@@ -1,4 +1,4 @@
-package com.syphan.practice.houseservice.config;
+package com.syphan.practice.house.service.rest.config;
 
 import org.springframework.context.annotation.Configuration;
 

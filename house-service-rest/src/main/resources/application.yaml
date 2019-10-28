@@ -58,7 +58,7 @@ dubbo:
   metadata-report:
     address: zookeeper://127.0.0.1:2181
   scan:
-    base-packages: com.syphan.practice.houseservice.service.impl
+    base-packages: com.syphan.practice.house.service.rest.service.impl
   protocol:
     serialization: protostuff
     name: dubbo
